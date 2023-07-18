@@ -7,9 +7,7 @@ public class rockpaperscissors {
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
          System.out.println("enter a number for as follows: \n rock : 0 \n paper : 1 \n scissors : 2");
-            
-         
-       for(int i=0; i<3; i++)
+       for(int i=0; i<5; i++)
        {
          int s = sc.nextInt();
         int r = rand.nextInt(3);
@@ -40,6 +38,8 @@ public class rockpaperscissors {
        }
           if(cr>cy)
             System.out.println("rose is the winner.!");
+            else if(cr == cy)
+            System.out.println("OOPS!A draw! play again :) ");
             else
             System.out.println("you are the winner.!");
        }
